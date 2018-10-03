@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="animate.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="anime.min.js"></script>
+        <script src="particles.js"></script>
+        <title>Find Your Symbol</title>
+       
+    </head>
+
+<body>
+    <img src="pics/push.png" alt="push" id="push">
+    
+    <img src="/pics/leftdoor.jpg" alt="1" id="leftdoor">
+    <img src="/pics/rightdoor.jpg" alt="2" id="rightdoor"> 
+    <h1 class="line1 animated fadein">The Four Symbols</h1>
+    <h1 class="line2 animated fadein">Four mythological creatures in the Chinese constellations</h1>
+    <h1 class="line3 animated fadein">Ready? Let's find them!</h1>
+    <p style="text-align:center"><a href="/index2.html" class="button animated fadein">GO</a></p>
+    <div>
+        <p style="text-align: center;"><img src="pics/4.png" alt="4" class="wheel"></p>
+    </div>
+
+    <script>
+        
+    $(document).ready(function(){
+      $("#push").click(function(){
+      $("#leftdoor").animate({left:'-700px'});
+      });
+    });
+
+       $(document).ready(function(){
+      $("#push").click(function(){
+      $("#rightdoor").animate({left:'1390px'});
+      });
+    });
+
+     $(document).ready(function(){
+      $("#push").click(function(){
+      $("#push").animate({opacity:'0'});
+      });
+    });
+
+    
+    </script>
+
+
+
+    
+</body>
+</html>
